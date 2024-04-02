@@ -1,0 +1,183 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #9D0722;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.navbar {
+  background-color: #9D0722;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar a {
+  color: wheat;
+  text-decoration: none;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+}
+
+.navbar a:hover {
+  color: #FD9EA0;
+}
+
+.navbar a img {
+  display: block;
+  margin: 0 auto; /* Centrar horizontalmente */
+  max-width: 50px; /* Reducir el tamaño máximo de la imagen */
+  height: auto; /* Permitir que la altura se ajuste automáticamente */
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+  .navbar a img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/*SECCION PRINCIPAL*/
+
+.circle-container {
+  position: relative; /* Posición relativa para el contenedor */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Alinear elementos arriba */
+  flex-wrap: wrap;
+  padding: 200px 20px; /* Ajuste del margen superior e inferior */
+  margin: 0 auto;
+}
+
+.circle-link {
+  position: relative; /* Posición relativa para cada círculo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 250px; /* Tamaño máximo de las imágenes */
+  height: 250px; /* Tamaño máximo de las imágenes */
+  border-radius: 45%;
+  text-decoration: none;
+  margin: 60px; /* Ajuste del margen entre los círculos (aumentado a 20px) */
+}
+
+.circle-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 45%;
+  object-fit: cover;
+}
+
+
+/* Estilos para el texto encima del contenedor */
+.circle-container h2 {
+  font-size: 45px;
+  color: wheat;
+  position: absolute;
+  top: -100px; /* Ajusta la posición verticalmente */
+  left: 50%; /* Alinea al centro horizontalmente */
+  transform: translateX(-50%); /* Centra horizontalmente */
+  padding: 5px 10px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+
+.circle-link:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: -170px; /* Ajuste del margen superior del contenedor */
+}
+
+.buy-button {
+  font-size: 20px;
+  display: inline-block;
+  padding: 35px 50px; /* Ajuste del tamaño del botón */
+  background-color: #EF676C;
+  color: wheat;
+  text-decoration: none;
+  border-radius: 10px; /* Ajuste del radio de los bordes */
+  box-shadow: 0px 5px 10px rgba(98, 0, 1, 2); /* Sombra hacia abajo */
+}
+
+.buy-button:hover {
+  background-color: #D44E57; /* Cambiar color al pasar el cursor */
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .circle-link {
+    max-width: 400px;
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .circle-link {
+    max-width: 450px;
+    height: 500px;
+  }
+}
+
+
+.contenedor-flex {
+  display: flex;
+  align-items: center;
+}
+
+.imagen-lado {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.texto-lado {
+  margin-top: 70px;
+  font-size: 20px;
+  color: wheat;
+  margin-left: 500px;
+  flex: 2;
+}
+
+.imagen-lado img {
+  border-radius: 10px;
+  margin-top: 120px;
+  margin-left: 300px;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  font-size: 20px;
+  text-decoration: none; /* Quita el subrayado */
+  color: white; /* Usa el color del texto padre */
+}
